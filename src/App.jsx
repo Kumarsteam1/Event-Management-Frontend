@@ -15,7 +15,6 @@ import Settings from './pages/settings/Settings';
 import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
-  // No need for token check now, we're just using location
   const location = useLocation();
 
   const token = localStorage.getItem("token");
