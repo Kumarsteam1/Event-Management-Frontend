@@ -1,0 +1,224 @@
+.eventlist-main {
+	width: 100%;
+	height: 100vh;
+	background-color: #F3F3F1;
+}
+
+.event-container {
+	width: 80%;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	margin-top: 4vh;
+}
+
+.tabs {
+	width: 100%;
+	display: flex;
+	border-bottom: 2px solid #ddd;
+}
+
+.tab-button {
+	padding: 10px;
+	text-align: center;
+	font-weight: 500;
+	color: #555;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.tab-button.active {
+	border-bottom: 2px solid blue;
+	color: black;
+}
+
+.event-details {
+	width: 100%;
+	padding: 15px;
+}
+
+.event-cards {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px;
+	border-radius: 8px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.event-date p {
+	margin: 0;
+	color: gray;
+}
+
+.event-time {
+	color: blue;
+}
+
+
+.event-info {
+	margin-left: 15px;
+}
+
+.event-title {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.event-description {
+	color: gray;
+	font-size: 14px;
+}
+
+.status-badge {
+	background: #e0e0e0;
+	color: black;
+	padding: 5px 10px;
+	border-radius: 12px;
+	font-size: 12px;
+}
+
+.attendees {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: gray;
+}
+
+.icon {
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+}
+
+
+.status-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.status-badge.accept {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-badge.reject {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-container {
+    width: 95%;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tab-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .event-cards {
+    grid-template-columns: 1fr; 
+  }
+
+  .event-card {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-container {
+    padding: 15px;
+  }
+
+	.event-date{
+
+	}
+
+  .tab-button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .event-card {
+    padding: 10px;
+  }
+
+	
+.event-cards {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border-radius: 8px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.event-date p {
+	font-size: 10px;
+	margin: 0;
+	color: gray;
+}
+
+.event-time {
+	font-size: 10px;
+	color: blue;
+}
+
+
+.event-info {
+	margin-left: 10px;
+}
+
+.event-title {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.event-description {
+	color: gray;
+	font-size: 10px;
+}
+
+.status-badge {
+	background: #e0e0e0;
+	color: black;
+	padding: 5px 5px;
+	border-radius: 12px;
+	font-size: 10px;
+}
+
+.attendees {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	color: gray;
+}
+
+.icon {
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
+}
+
+}

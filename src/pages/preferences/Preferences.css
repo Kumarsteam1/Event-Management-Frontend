@@ -1,0 +1,285 @@
+/* Signup Page Container */
+.signup-container {
+	display: flex;
+	min-height: 100vh;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+}
+
+/* Left Section - 70% */
+.signup-main {
+	flex: 7;
+	padding: 40px;
+	width: 70%;
+	height: 100vh;
+}
+
+/* Logo Section */
+.logo-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.logo {
+	width: 24px;
+	height: 24px;
+}
+
+.cnnct-logo {
+	width: 100px;
+	font-size: 24px;
+}
+
+/* Form Section */
+.signup-form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center ;
+	width: 100%;
+	height: auto;
+}
+
+/* Form Header */
+.form-header {
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.form-title {
+	font-size: 40px;
+	font-weight: bolder;
+	color: #333;
+}
+
+.signin-link {
+	font-size: 0.9rem;
+	color: #007bff;
+	text-decoration: none;
+}
+
+.signin-link:hover {
+	text-decoration: underline;
+}
+
+/* Form Styling */
+.signup-form {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+.input-group {
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.input-group p {
+	font-size: 0.9rem;
+	color: #555;
+	margin-bottom: 5px;
+}
+
+.input-group input {
+	width: 100%;
+	padding: 10px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	outline: none;
+	transition: border 0.2s;
+}
+
+.input-group input:focus {
+	border-color: #007bff;
+}
+
+/* Signup Button */
+.signup-button-preference {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 12px;
+	font-size: 1rem;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 10px;
+	transition: background 0.3s;
+	width: 60%;
+}
+
+.signup-button-preference:hover {
+	background-color: #0056b3;
+}
+
+/* Right Section - 30% */
+.signup-aside {
+	flex: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #007bff;
+	border-radius: 0 12px 12px 0;
+	max-width: 30%;
+}
+
+.signup-image {
+	width: 100%;
+	height: 100vh;
+}
+
+.cards-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.cards-section p{
+	font-weight: bold;
+}
+
+
+.cards {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  height: 50px;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+	.signup-container {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.signup-main {
+		width: 100%;
+		height: auto;
+		padding: 20px;
+		border-radius: 12px;
+	}
+
+	.signup-aside {
+		display: none;
+	}
+
+	.form-header,
+	.signup-form {
+		width: 80%;
+	}
+
+	.signup-button {
+		width: 80%;
+	}
+
+	.cards {
+		width: 80%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	
+}
+
+@media (max-width: 768px) {
+	.signup-main {
+		padding: 15px;
+	}
+
+	.form-header,
+	.signup-form {
+		width: 90%;
+	}
+
+	.input-group input {
+		padding: 8px;
+		font-size: 0.9rem;
+	}
+
+	.signup-button {
+		padding: 10px;
+		font-size: 0.9rem;
+		width: 100%;
+	}
+
+	.cards {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	
+}
+
+@media (max-width: 480px) {
+	.signup-main {
+		padding: 10px;
+	}
+
+	.form-title {
+		font-size: 28px;
+	}
+
+	.form-header,
+	.signup-form {
+		width: 100%;
+	}
+
+	.input-group p {
+		font-size: 0.8rem;
+	}
+
+	.input-group input {
+		font-size: 0.85rem;
+	}
+
+	.signup-button {
+		font-size: 0.85rem;
+	}
+
+	.cards-section {
+		gap: 10px;
+	}
+}
